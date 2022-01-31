@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WOLDeviceManager</string>
+    <string name="unInitialize">UnInitialize</string>
+    <string name="menu_item_scanner">局域网扫描</string>
+    <string name="menu_item_config">本地配置</string>
+    <string name="menu_item_settings">设置</string>
+    <string name="networkInformation">网络信息</string>
+    <string name="newScan">新的扫描</string>
+    <string name="addDialogHostName">配置名称</string>
+    <string name="addDialogHostIP">IP地址</string>
+    <string name="addDialogHostMac">MAC地址</string>
+    <string name="addDialogDevice">来源</string>
+    <string name="addDialogPort">端口</string>
+    <string name="addDialogManual">manual</string>
+    <string name="addDialogDefaultPort">888</string>
+    <string name="addDialogSave">保存</string>
+    <string name="wakeUpByBroadcast">以广播方式进行唤醒</string>
+</resources>
