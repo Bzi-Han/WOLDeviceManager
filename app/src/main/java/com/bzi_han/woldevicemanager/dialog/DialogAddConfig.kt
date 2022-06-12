@@ -22,7 +22,7 @@ class DialogAddConfig(parentView: View, dialogStyle: Int, lanDevice: LanDeviceIn
     init {
         thisView = LayoutInflater.from(context).inflate(R.layout.activity_dialog_addconfig, parentView as ViewGroup, false)
 
-        setContentView(thisView)
+        setContentView(thisView!!)
         hostName = thisView?.findViewById(R.id.hostName)
         hostIp = thisView?.findViewById(R.id.hostIp)
         hostMac = thisView?.findViewById(R.id.hostMac)

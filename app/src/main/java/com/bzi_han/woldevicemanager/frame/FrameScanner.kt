@@ -36,7 +36,7 @@ class FrameScanner : Fragment() {
         listView = thisView!!.findViewById(R.id.frame_scanner_listView)
         val newScanButton = thisView!!.findViewById<Button>(R.id.newScan)
         val scanProgress = thisView!!.findViewById<ProgressBar>(R.id.scanProgress)
-        val wifiService = thisView!!.context.getSystemService(Context.WIFI_SERVICE) as WifiManager
+        val wifiService = thisView!!.context.applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
 
         when (wifiService.wifiState) {
             1 -> MainActivity.showMessage("若想进行局域网扫描，请先打开WIFI并连接网络然后重新打开APP尝试")

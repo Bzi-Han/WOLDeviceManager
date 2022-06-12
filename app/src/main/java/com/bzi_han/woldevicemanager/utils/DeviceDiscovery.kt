@@ -1,7 +1,10 @@
 package com.bzi_han.woldevicemanager.utils
 
+import android.util.Log
 import com.bzi_han.woldevicemanager.entity.LanDeviceInfo
+import java.io.BufferedReader
 import java.io.File
+import java.io.InputStreamReader
 import java.lang.RuntimeException
 import java.lang.StringBuilder
 import java.net.DatagramPacket
@@ -129,7 +132,7 @@ object DeviceDiscovery {
         // 接收返回
         val recvBuffer = ByteBuffer.allocate(1024)
         val recvPacket = DatagramPacket(recvBuffer.array(), recvBuffer.capacity())
-        sender.soTimeout = 500
+        sender.soTimeout = 1000
         kotlin.runCatching {
             sender.receive(recvPacket)
         }.onFailure { return "UnKnowDevice" }
